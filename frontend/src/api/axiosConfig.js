@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 // ✅ Fix: use import.meta.env.VITE_* for environment variables
-const baseURL = import.meta.env.VITE_BackendURL || 'http://localhost:5000'
+const baseURL = import.meta.env.VITE_Backend_URL || 'http://localhost:5000'
 
 // ✅ Create axios instance
 const api = axios.create({
@@ -36,3 +36,4 @@ api.interceptors.response.use(
 )
 
 export default api
+
