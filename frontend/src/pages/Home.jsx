@@ -64,7 +64,7 @@ export default function Home() {
           <div className="mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-full mb-4">
               <Shield className="w-4 h-4 text-slate-400" />
-              <span className="text-slate-300 text-sm font-medium">Blockchain Secured</span>
+              <span className="text-slate-300 text-sm font-medium">Blockchain Secured ++ </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white leading-tight">
@@ -157,3 +157,4 @@ export default function Home() {
     </div>
   )
 }
+
