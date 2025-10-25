@@ -33,11 +33,7 @@ export default function CandidateList() {
   const handleVote = async (candidateId) => {
     if (!user) return toast.error('Please login to vote')
     try {
-
-      // console.log("Voting for candidate:", candidateId);
-      const res = await api.post(`/candidates/vote/${candidateId} `)
-      console.log("Vote response:", res.data);
-      
+      const res = await api.post(`/candidates/vote/${candidateId} `)   
       toast.success('Vote cast ✅')
       // mark user as voted locally
       setUser((u) => ({ ...(u || {}), hasVoted: true }))
@@ -70,3 +66,4 @@ export default function CandidateList() {
     </div>
   )
 }
+
